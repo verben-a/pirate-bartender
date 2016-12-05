@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pirate bartender</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+    <form>
+        <h2>What types of cocktails do you like?</h2>
+        <div class="grey-form">
+        	<div class="dropdown">
+        		<input type="text" value="" class="taste-form" placeholder="Choose your favourite taste!" onclick="showTaste()">
+        		<div class="dropdown-content-taste" id="content-taste">
+        		<p id="strong">Strong</p>
+        		<p id="salty">Salty</p>
+        		<p id="bitter">Bitter</p>
+        		<p id="sweet">Sweet</p>
+        		<p id="fruity">Fruity</p>
+        		</div>
+        	</div>
+        	</div>
+        	<br />
+        	<h2>What mood do you have?</h2>
+        <div class="grey-form">
+        	<div class="dropdown">
+        		<input type="text" value="" class="mood-form" placeholder="Choose your mood!" onclick="showMood()">
+        		<div class="dropdown-content-mood" id="content-mood">
+        		<p id="cheerful">Cheerful</p>
+        		<p id="flirty">Flirty</p>
+        		<p id="gloomy">Gloomy</p>
+        		<p id="fancy">Fancy</p>
+        		<p id="desperate">Desperate</p>
+        		</div>
+        	</div>
+        	</div>
+        	<button type="submit" class="submit-mix">Mix</button>
+        	</form>
+        	<br />
+        <div class="results">
+        </div>
+        <br />
+        <div>
+        	Drink contains: 
+        	<p class="ingredient"></p>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
