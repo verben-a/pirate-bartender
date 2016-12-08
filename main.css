@@ -170,3 +170,7 @@ h2 {
 .results p {
     background-color: #9575CD;
 }
+
+.col-12 > .results {
+    background-color: #9575CD;
+}
