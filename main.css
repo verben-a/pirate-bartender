@@ -5,9 +5,11 @@
     color: white;
 }
 
+
 main {
     margin: 0 auto;
 }
+
 
 img {
     display: block;
@@ -43,6 +45,7 @@ h2 {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
 
+
 /* Clearfix */
 
 
@@ -66,16 +69,14 @@ h2 {
     padding-right: 1.04166666%;
 }
 
-/* Mobile defaults */
 
+/* Mobile defaults */
 
 .col-6,
 .col-12 {
     background-color: #9575CD;
     width: 100%;
 }
-
-
 
 
 /* Non-mobile, grid */
@@ -166,7 +167,6 @@ h2 {
     display: block;
 }
 
-
 .submit-mix {
     background-color: #4527A0;
     color: white;
@@ -182,7 +182,10 @@ h2 {
     border-radius: 2px;
 }
 
-
 .show-ingredient, .ingredient, .results p {
+    background-color: #9575CD;
+}
+
+.col-12 > .results {
     background-color: #9575CD;
 }
