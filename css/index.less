@@ -3,13 +3,12 @@
     font-family: Aref Ruqaa;
     background-color: #7E57C2;
     color: white;
+    letter-spacing: 1.5px;
 }
-
 
 main {
     margin: 0 auto;
 }
-
 
 img {
     display: block;
@@ -19,19 +18,16 @@ img {
     width: 70px;
 }
 
-
 h1,
 h3 {
     text-align: center;
 }
-
 
 h2 {
     font-size: 22px;
     text-align: center;
     background-color: #9575CD;
 }
-
 
 .row {
     max-width: 1000px;
@@ -43,21 +39,17 @@ h2 {
     border-radius: 2px;
     padding: 40px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-}
 
-
-/* Clearfix */
-
-
-.row::before,
-.row::after {
+    &::before, 
+    &::after {
     display: table;
     content: '';
+    }
+
+    &::after {
+    clear: both;
 }
 
-
-.row::after {
-    clear: both;
 }
 
 
@@ -81,7 +73,6 @@ h2 {
 
 /* Non-mobile, grid */
 
-
 @media only screen and (min-width: 640px) {
     /* 6 columns */
     .col-6 {
@@ -95,13 +86,12 @@ h2 {
     }
 }
 
-.grey-form {
+.violet-form {
     height: 100px;
     background-color: #9575CD;
     margin: 0 auto;
     text-align: center;
 }
-
 
 .taste-form,
 .mood-form {
@@ -115,13 +105,11 @@ h2 {
     width: 250px;
 }
 
-
 .dropdown {
     position: relative;
     display: inline-block;
     background-color: #9575CD;
 }
-
 
 .dropdown-content-taste,
 .dropdown-content-mood {
@@ -130,38 +118,18 @@ h2 {
     background-color: #9575CD;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    p {
+        background-color: #9575CD;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    p:hover {
+        background-color: #673AB7;
+        color: white;
+    }
 }
-
-
-.dropdown-content-taste p {
-    background-color: #9575CD;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content-mood p {
-    background-color: #9575CD;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content-taste p:hover {
-    background-color: #673AB7;
-    color: white;
-}
-
-
-.dropdown-content-mood p:hover {
-    background-color: #673AB7;
-    color: white;
-}
-
 
 .show {
     display: block;
@@ -182,7 +150,9 @@ h2 {
     border-radius: 2px;
 }
 
-.show-ingredient, .ingredient, .results p {
+.show-ingredient,
+.ingredient,
+.results p {
     background-color: #9575CD;
 }
 

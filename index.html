@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-
-
-
 <head>
     <title>Pirate bartender</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="pirate-bartender.1.0.0.min.css">
 </head>
-
-
-
 
 <body>
     <main>
@@ -24,9 +18,10 @@
         <div class="row">
             <div class="col-6">
                 <h2>What types of cocktails do you like?</h2>
-                <div class="grey-form">
+                <div class="violet-form">
                     <div class="dropdown">
-                        <input type="text" value="" class="taste-form" placeholder="Choose your favourite taste!" onclick="showTaste()">
+                        <span class="dropdown-taste"><input type="text" value="" class="taste-form" placeholder="Choose your favourite taste!">
+                        </span>
                         <div class="dropdown-content-taste" id="content-taste">
                             <p id="strong">Strong</p>
                             <p id="salty">Salty</p>
@@ -39,9 +34,9 @@
             </div>
             <div class="col-6">
                 <h2>What mood do you have?</h2>
-                <div class="grey-form">
+                <div class="violet-form">
                     <div class="dropdown">
-                        <input type="text" value="" class="mood-form" placeholder="Choose your mood!" onclick="showMood()">
+                        <span class='dropdown-mood'><input type="text" value="" class="mood-form" placeholder="Choose your mood!"></span>
                         <div class="dropdown-content-mood" id="content-mood">
                             <p id="cheerful">Cheerful</p>
                             <p id="flirty">Flirty</p>
@@ -65,8 +60,7 @@
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="app.js"></script>
+    <script src="./pirate-bartender.1.0.0.js"></script>
 </body>
 
 </html>

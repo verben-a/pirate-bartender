@@ -1,3 +1,7 @@
+var $ = require('jquery');
+var displayOptions = require('./displayoptions.js')
+var choosing = require('./choosing.js');
+
 var Cocktail = function(taste, mood) {
     this.taste = taste;
     this.mood = mood;
@@ -9,30 +13,28 @@ Cocktail.prototype.mixing = function(rand) {
 }
 
 
-function showTaste() {
-    $('.dropdown-content-taste').toggle('show');
-}
-
-
-function showMood() {
-    $('.dropdown-content-mood').toggle('show');
-}
-
-
 $(document).ready(function() {
+
+    $('.dropdown-taste').on('click', function(e){
+        e.preventDefault();
+        displayOptions('.dropdown-content-taste');
+    });
+
+    $('.dropdown-mood').on('click', function(e) {
+        e.preventDefault();
+        displayOptions('.dropdown-content-mood');
+    })
 
 
     $('#content-taste p').on('click', function(e) {
         e.preventDefault();
-        $('.taste-form').val($(this).text());
-        $('#content-taste').hide();
-    });
+        choosing($(this).text(), '.taste-form', '#content-taste');
 
+    });
 
     $('#content-mood p').on('click', function(e) {
         e.preventDefault();
-        $('.mood-form').val($(this).text());
-        $('#content-mood').hide();
+        choosing($(this).text(), '.mood-form', '#content-mood');
     });
 
 
